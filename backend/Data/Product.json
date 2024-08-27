@@ -1,0 +1,150 @@
+[
+    {
+        "name":"One Plus ",
+        "price":28000,
+        "description":"PowerFull Noob",
+        "ratings":3,
+        "images":[
+            {
+                "image":"/images/products/1.jpg"
+            },
+            {
+                "image":"/images/products/2.jpg"
+            },
+            {
+                "image":"/images/products/3.jpg"
+            },
+            {
+                "image":"/images/products/4.jpg"
+            }
+        ],
+        "category":"Mobile Phones",
+        "seller":"Amazon",
+        "stock":5,
+        "numOfReviews":15,
+        "reviews":[]
+    },
+    {
+        "name":"One Plus watch ",
+        "price":10,
+        "description":"PowerFull Noob",
+        "ratings":2,
+        "images":[
+            {
+                "image":"/images/products/1.jpg"
+            },
+            {
+                "image":"/images/products/2.jpg"
+            },
+            {
+                "image":"/images/products/3.jpg"
+            },
+            {
+                "image":"/images/products/4.jpg"
+            }
+        ],
+        "category":"Electronics",
+        "seller":"Amazon",
+        "stock":5,
+        "numOfReviews":15,
+        "reviews":[]
+    },
+    {
+        "name":"One Plus ",
+        "price":200,
+        "description":"PowerFull Noob",
+        "ratings":5,
+        "images":[
+            {
+                "image":"/images/products/2.jpg"
+            }
+        ],
+        "category":"Mobile Phones",
+        "seller":"Amazon",
+        "stock":5,
+        "numOfReviews":15,
+        "reviews":[]
+    },
+    {
+        "name":"Redmi",
+        "price":28000,
+        "description":"PowerFull Noob",
+        "ratings":4,
+        "images":[
+            {
+                "image":"/images/products/3.jpg"
+            }
+        ],
+        "category":"Mobile Phones",
+        "seller":"Amazon",
+        "stock":5,
+        "numOfReviews":15,
+        "reviews":[]
+    },
+    {
+        "name":"Apple ",
+        "price":28,
+        "description":"PowerFull Noob",
+        "ratings":4,
+        "images":[
+            {
+                "image":"/images/products/4.jpg"
+            }
+        ],
+        "category":"Mobile Phones",
+        "seller":"Amazon",
+        "stock":5,
+        "numOfReviews":15,
+        "reviews":[]
+    },
+    {
+        "name":"Lenovo",
+        "price":300,
+        "description":"PowerFull Noob",
+        "ratings":4,
+        "images":[
+            {
+                "image":"/images/products/4.jpg"
+            }
+        ],
+        "category":"Laptops",
+        "seller":"Amazon",
+        "stock":5,
+        "numOfReviews":15,
+        "reviews":[]
+    }
+    ,
+    {
+        "name":"Dell 15 Thin & Light Laptop, 12th Gen",
+        "price":44990,
+        "description":"PowerFull Noob",
+        "ratings":4,
+        "images":[
+            {
+                "image":"/images/products/4.jpg"
+            }
+        ],
+        "category":"Laptops",
+        "seller":"Amazon",
+        "stock":5,
+        "numOfReviews":15,
+        "reviews":[]
+    }
+    ,
+    {
+        "name":"Noise Aura Buds in-Ear Truly Wireless Earbuds with 60H of Playtime",
+        "price":12000,
+        "description":"PowerFull Noob",
+        "ratings":4,
+        "images":[
+            {
+                "image":"/images/products/4.jpg"
+            }
+        ],
+        "category":"Electronics",
+        "seller":"Amazon",
+        "stock":5,
+        "numOfReviews":0,
+        "reviews":[]
+    }
+]

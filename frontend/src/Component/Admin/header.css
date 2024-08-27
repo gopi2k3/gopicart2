@@ -1,0 +1,707 @@
+/* body {
+ background-color: #f6f6f9; 
+} */
+
+ul li {
+    list-style-type: none;
+}
+
+header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    height: 60px;
+    box-shadow: 0 0.46875rem 2.1875rem rgba(4, 9, 20, 0.03), 0 0.9375rem 1.40625rem rgba(4, 9, 20, 0.03), 0 0.25rem 0.53125rem rgba(4, 9, 20, 0.05), 0 0.125rem 0.1875rem rgba(4, 9, 20, 0.03);
+
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.header-row2 {
+    display: flex;
+    align-items: center;
+    height: 60px;
+
+}
+
+.header-btn-div {
+    margin-left: 2px;
+}
+
+
+
+.header-log {
+    width: 90%;
+    margin: 0 auto !important;
+
+}
+
+
+.header-left {
+    height: 60px;
+}
+
+.header-right {
+    height: 60px;
+
+}
+
+
+/* click ================== */
+
+
+.header-logo-div {
+    width: 240px;
+
+}
+
+.header-logo-div.is-active {
+    width: 60px;
+}
+
+.header-row .header-contant {
+    display: flex;
+    width: calc(100% - 240px);
+}
+
+.header-row.is-active .header-contant {
+    display: flex;
+    width: calc(100% - 60px);
+}
+
+.header-logo-div.is-active .header-logo-img {
+    display: none !important;
+
+}
+
+.header-log {
+    justify-content: space-between;
+}
+
+
+.header-logo-div.is-active .header-log {
+    justify-content: center;
+}
+
+
+/* hamburger icon Design============== */
+
+
+.hamburger {
+    padding: 0;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: .15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+}
+
+.hamburger:hover {
+    opacity: .7;
+}
+
+.burger-box {
+    width: 24px;
+    height: 14px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    width: 24px;
+    height: 2px;
+    background-color: #3f6ad8;
+    border-radius: 10px;
+    position: absolute;
+    transition-property: transform;
+    display: block;
+    margin-top: -1px;
+}
+
+
+.hamburger .hamburger-inner {
+    top: 1px;
+    transition-duration: 0.275s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.hamburger.active .hamburger-inner {
+    transform: translate3d(0, 6px, 0) rotate(135deg);
+    transition-delay: .075s;
+}
+
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: "";
+    display: block;
+}
+
+
+
+
+/* before ====== */
+
+
+.hamburger-inner::before {
+    top: -6px;
+}
+
+.hamburger .hamburger-inner::before {
+    top: 6px;
+    transition: opacity .125s .275s ease;
+}
+
+/* after =============== */
+
+.hamburger-inner::after {
+    bottom: -6px;
+}
+
+.hamburger .hamburger-inner::after {
+    top: 12px;
+    transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 24px;
+    height: 2px;
+    background-color: #3f6ad8;
+    border-radius: 10px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: .15s;
+    transition-timing-function: ease;
+}
+
+
+/* active /=== */
+
+.hamburger.is-active .hamburger-inner {
+    transform: translate3d(0, 6px, 0) rotate(135deg);
+    transition-delay: 0.075s;
+}
+
+.hamburger.active .hamburger-inner,
+.hamburger.active .hamburger-inner::before,
+.hamburger.active .hamburger-inner::after {
+    background-color: #3f6ad8;
+}
+
+
+
+.hamburger.active .hamburger-inner::before {
+    transition-delay: 0s;
+    opacity: 0;
+}
+
+.hamburger.active .hamburger-inner::after {
+    transform: translate3d(0, -12px, 0) rotate(-270deg);
+    transition-delay: .075s;
+}
+
+button,
+[type=button] {
+    outline: none !important;
+}
+
+
+
+/* End Of Hamburger Icons Design ===================================== */
+
+
+
+
+
+
+
+/* seide bar =================  */
+
+
+.app-sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 240px;
+    background-color: #fff;
+    z-index: 11;
+    /* overflow-y   :auto !important; */
+    left: 0;
+    top: 60px;
+    box-shadow: 7px 0 60px rgba(0, 0, 0, 0.05);
+    padding-top: 20px;
+    transition: all .2s;
+}
+
+
+
+@media (min-width:320px) {
+    .header-row {
+        display: none;
+    }
+
+    .header-row2 {
+        display: flex;
+    }
+
+    .header-logo-img {
+        width: 60%;
+    }
+
+    .main-content.active {
+
+        margin-left: 0px;
+        width: calc(100% - 0px);
+        margin-top: 5.4rem;
+
+
+    }
+
+    .main-content {
+
+        padding: 13px 14px 0;
+        margin-left: 0px;
+        width: calc(100% - 0px);
+        margin-top: 5.4rem;
+    }
+
+    .page-icon {
+        display: none;
+    }
+
+    .app-sidebar.active {
+        width: 00px !important;
+    }
+
+    .app-sidebar {
+        display: none;
+    }
+
+    .dash-day-div {
+        display: none;
+    }
+
+    .mobile-sidebar {
+        display: block;
+    }
+
+    .dash-card2 {
+        min-height: 50vh;
+    }
+}
+
+@media (min-width:720px) {
+    .header-row {
+        display: none;
+    }
+
+    .header-row2 {
+        display: flex;
+    }
+
+    .header-logo-img {
+        width: 37%;
+    }
+
+    .main-content.active {
+
+        margin-left: 0px;
+        width: calc(100% - 0px);
+        margin-top: 5.4rem;
+
+
+    }
+
+    .main-content {
+
+        padding: 15px 15px 0;
+        margin-left: 0px;
+        width: calc(100% - 0px);
+        margin-top: 5.4rem;
+    }
+
+    .page-icon {
+        display: none;
+    }
+
+    .app-sidebar.active {
+        width: 60px !important;
+    }
+
+    .app-sidebar {
+        display: none;
+    }
+
+    .dash-day-div {
+        display: flex;
+    }
+
+    .mobile-sidebar {
+        display: block;
+    }
+
+    .dash-card2 {
+        min-height: 55vh;
+    }
+
+}
+
+@media (min-width:1000px) {
+    .header-row {
+        display: flex;
+    }
+
+    .header-row2 {
+        display: none;
+    }
+
+    .header-logo-img {
+        width: 60%;
+    }
+
+    .main-content.active {
+
+        margin-left: 60px;
+        width: calc(100% - 60px);
+        margin-top: 5.4rem;
+
+
+    }
+
+    .main-content {
+
+        padding: 20px 15px 0;
+        margin-left: 240px;
+        width: calc(100% - 240px);
+        margin-top: 5.4rem;
+    }
+
+    .page-icon {
+        display: flex;
+    }
+
+    .app-sidebar.active {
+        width: 60px !important;
+    }
+
+    .app-sidebar {
+        display: block;
+    }
+
+    .dash-day-div {
+        display: flex;
+    }
+
+    .mobile-sidebar {
+        display: none;
+    }
+
+    .dash-card2 {
+        min-height: 56vh;
+    }
+
+}
+
+@media (min-width:1200px) {
+    .dash-card2 {
+        min-height: 50vh;
+    }
+
+}
+
+
+
+/* Profile- content  */
+
+
+.profile-content {
+    display: none;
+    z-index: 999;
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    width: 148px;
+    right: 10px !important;
+    top: 6px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    animation: dropDown .3s both;
+    -webkit-animation: dropDown .3s both;
+}
+
+.profile-content h6 {
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.profile-content h6:hover {
+    transition: all 300ms ease;
+    background: #ebeef2;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+}
+
+.profile-content.active {
+    display: block;
+
+    -webkit-transform: translate3d(0px, 62px, 0px);
+    -moz-transform: translate3d(0px, 62px, 0px);
+    -ms-transform: translate3d(0px, 62px, 0px);
+    -o-transform: translate3d(0px, 62px, 0px);
+    inset: 0px 0px auto auto;
+    margin: 0px;
+    transform: translate3d(0px, 62px, 0px);
+}
+
+.user-details {
+    padding   : 0;
+    margin-top: 30px;
+  }
+  
+  .user-details h5 {
+    font-size: 16px;
+  }
+  .user-name {
+    position: relative;
+  }
+
+  .user-toggle {
+    cursor: pointer;
+  }
+  
+  .user-icon img{
+    align-items          : center;
+    justify-content      : center;
+    border-radius        : 50%;
+    color                : #fff;
+    display              : flex;
+    width                : 32px;
+    height               : 32px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius   : 50%;
+    -ms-border-radius    : 50%;
+    -o-border-radius     : 50%;
+  }
+
+  .app-sidebar.active .side-head {
+    text-indent: -999em;
+  }
+  
+  .app-sidebar.active .sub-title {
+    text-indent: -999em;
+  }
+  
+  .side-head {
+    font-size: 20px;
+  }
+  
+  .app-sidebar.active:hover .sidebar-ul .side-head {
+    text-indent: 0 !important;
+  }
+  .app-sidebar.active:hover .sidebar-ul .sub-title {
+    text-indent: 0 !important;
+  }
+
+  .app-sidebar.active:hover {
+    width: 240px !important;
+}
+    
+
+.link-L{
+    padding: 10px 0;
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.sidebar-li{
+    padding: 10px 0 10px 20px;
+}
+
+.sub-title{
+    padding: 7px 0;
+}
+
+
+
+.dash-card h6 {
+    font-size: 21px;
+  }
+  
+  .dash-info {
+    font-size  : 15px;
+    font-weight: 600;
+  }
+  
+  .dash-success {
+    color: #1ee0ac !important;
+  }
+  
+  .dash-danger {
+    color: #e85347 !important;
+  }
+  
+  .dash-card {
+    background-color: #fff;
+    box-shadow: 7px 10px 15px -3px rgba(0,0,0,0.1) !important;
+    border          : none !important;
+    cursor          : pointer;
+    border-radius: 1 rem;
+  
+    transition        : ease 300ms all;
+    -webkit-transition: ease 300ms all;
+    -moz-transition   : ease 300ms all;
+    -ms-transition    : ease 300ms all;
+    -o-transition     : ease 300ms all;
+  }
+  
+
+  .dash-card-icon {
+    display              : flex;
+    align-items          : center;
+    justify-content      : center;
+    font-size            : 1.5rem;
+    font-weight          : 600;
+    width                : 50px;
+    height               : 50px;
+    border-radius        : 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius   : 6px;
+    -ms-border-radius    : 6px;
+    -o-border-radius     : 6px;
+  }
+  
+  .dash-card-innerdiv:nth-child(1) .dash-card-icon {
+  
+    color           : #854fff;
+    background-color: #efe8ff !important;
+  
+  }
+  
+  .dash-card-innerdiv:nth-child(2) .dash-card-icon {
+  
+    color           : #09c2de;
+    background-color: #dff7fb !important;
+  
+  }
+  
+  .dash-card-innerdiv:nth-child(3) .dash-card-icon {
+  
+    color           : #ff63a5;
+    background-color: #ffebf3 !important;
+  
+  }
+  
+  .dash-card-innerdiv:nth-child(4) .dash-card-icon {
+  
+    color           : #816bff;
+    background-color: #efecff !important;
+  
+  }
+  
+  .dash-card-info {
+    font-family        : "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight        : 600;
+    font-style         : normal;
+    font-variation-settings:
+      "wdth"100;
+  }
+  
+  .dash-card-info p {
+    margin   : 0;
+    color    : #8094ae;
+    font-size: 17px;
+  
+  }
+  
+  .dash-card-info h3 {
+    color      : #364a63;
+    font-size  : 24px;
+    font-weight: 700;
+  
+  
+  
+  }
+  
+  .bw {
+    background-color: white;
+  }
+  
+  .dash-card-div ul {
+    padding-top: 30px;
+  
+  }
+  
+  /* main =============================== */
+  
+  
+  .dash-amount {
+    color      : #364a63;
+    font-size  : 2rem;
+    font-weight: 500;
+    margin     : 5px 0;
+  }
+
+  .dash-card:hover {
+    transform         : translateY(-7px);
+    -webkit-transform : translateY(-7px);
+    -moz-transform    : translateY(-7px);
+    -ms-transform     : translateY(-7px);
+    -o-transform      : translateY(-7px);
+    transition        : ease 300ms all;
+    -webkit-transition: ease 300ms all;
+    -moz-transition   : ease 300ms all;
+    -ms-transition    : ease 300ms all;
+    -o-transition     : ease 300ms all;
+  }
+  
+
+
+
+  .mobile-sidebar {
+    position          : fixed;
+    top               : 60px;
+    left              : -400px;
+    z-index           : 99;
+    background        : #fff;
+    width             : 300px;
+    min-height        : 100vh;
+    box-shadow        : 0 0 10px #ccc;
+    transition        : all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition   : all 1s ease;
+    -ms-transition    : all 1s ease;
+    -o-transition     : all 1s ease;
+  }
+  
+  .mobile-sidebar.active {
+    left              : 0;
+    transition        : all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition   : all 1s ease;
+    -ms-transition    : all 1s ease;
+    -o-transition     : all 1s ease;
+  }
+  
